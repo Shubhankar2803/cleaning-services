@@ -1,0 +1,534 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Residential Cleaning",
+      "description": "Complete home cleaning service including all rooms, bathrooms, and kitchen. Perfect for busy families who want to maintain a spotless home.",
+      "icon": "fas fa-home",
+      "price": "$80-150",
+      "priceRange": {
+        "min": 80,
+        "max": 150
+      },
+      "features": [
+        "All rooms cleaned thoroughly",
+        "Bathroom sanitization and disinfection",
+        "Kitchen deep clean with appliances",
+        "Vacuum carpets and mop floors",
+        "Dusting all furniture and surfaces",
+        "Trash removal and bin sanitization"
+      ],
+      "duration": "2-4 hours",
+      "popularity": "Most Popular",
+      "category": "residential",
+      "frequency": ["one-time", "weekly", "bi-weekly", "monthly"],
+      "additionalServices": [
+        "Inside oven cleaning (+$25)",
+        "Inside refrigerator (+$20)",
+        "Window cleaning (+$15 per window)"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Commercial Cleaning",
+      "description": "Professional office and commercial space cleaning. Maintain a spotless work environment that impresses clients and boosts employee productivity.",
+      "icon": "fas fa-building",
+      "price": "$120-300",
+      "priceRange": {
+        "min": 120,
+        "max": 300
+      },
+      "features": [
+        "Office spaces and workstations",
+        "Conference and meeting rooms",
+        "Restroom maintenance and stocking",
+        "Trash removal and recycling",
+        "Window cleaning (interior)",
+        "Break room and kitchen areas"
+      ],
+      "duration": "3-6 hours",
+      "popularity": null,
+      "category": "commercial",
+      "frequency": ["daily", "weekly", "bi-weekly", "monthly"],
+      "additionalServices": [
+        "Carpet deep cleaning (+$50)",
+        "Floor waxing (+$75)",
+        "High dusting (+$40)"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Deep Cleaning",
+      "description": "Intensive cleaning service that covers every corner and detail. Ideal for seasonal cleaning, special occasions, or first-time service.",
+      "icon": "fas fa-broom",
+      "price": "$200-400",
+      "priceRange": {
+        "min": 200,
+        "max": 400
+      },
+      "features": [
+        "Inside appliances (oven, refrigerator, microwave)",
+        "Baseboards, trim, and moldings",
+        "Light fixtures and ceiling fans",
+        "Cabinet interiors and exteriors",
+        "Detailed sanitization of all surfaces",
+        "Window sills and tracks"
+      ],
+      "duration": "4-8 hours",
+      "popularity": null,
+      "category": "deep-cleaning",
+      "frequency": ["one-time", "seasonal"],
+      "additionalServices": [
+        "Garage cleaning (+$100)",
+        "Basement cleaning (+$75)",
+        "Attic cleaning (+$85)"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Move-in/Move-out",
+      "description": "Comprehensive cleaning for property transitions. Leave your old place spotless for the next tenant or move into a perfectly clean space.",
+      "icon": "fas fa-truck-moving",
+      "price": "$150-350",
+      "priceRange": {
+        "min": 150,
+        "max": 350
+      },
+      "features": [
+        "Empty property deep cleaning",
+        "All appliances inside and out",
+        "Cabinet and drawer sanitization",
+        "Floor treatment and polishing",
+        "Final inspection and touch-ups",
+        "Keys and property handover coordination"
+      ],
+      "duration": "3-7 hours",
+      "popularity": null,
+      "category": "move-service",
+      "frequency": ["one-time"],
+      "additionalServices": [
+        "Pressure washing exterior (+$150)",
+        "Paint touch-ups (+$100)",
+        "Minor repair coordination (+$75)"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Post-Construction Cleanup",
+      "description": "Specialized cleaning after renovation or construction work. Remove dust, debris, and construction residue to reveal your beautiful new space.",
+      "icon": "fas fa-hard-hat",
+      "price": "$250-500",
+      "priceRange": {
+        "min": 250,
+        "max": 500
+      },
+      "features": [
+        "Construction dust removal",
+        "Debris cleanup and disposal",
+        "Surface sanitization and polishing",
+        "Window washing (interior and exterior)",
+        "Final detailing and inspection",
+        "Safety equipment and protocols"
+      ],
+      "duration": "4-10 hours",
+      "popularity": null,
+      "category": "post-construction",
+      "frequency": ["one-time"],
+      "additionalServices": [
+        "Heavy debris removal (+$200)",
+        "Paint splatter removal (+$125)",
+        "Air duct cleaning (+$300)"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Carpet & Upholstery Cleaning",
+      "description": "Professional carpet and upholstery cleaning service. Remove stains, odors, and allergens effectively with our advanced cleaning equipment.",
+      "icon": "fas fa-couch",
+      "price": "$100-250",
+      "priceRange": {
+        "min": 100,
+        "max": 250
+      },
+      "features": [
+        "Hot water extraction (steam cleaning)",
+        "Stain removal and treatment",
+        "Odor elimination technology",
+        "Upholstery and furniture cleaning",
+        "Fabric protection application",
+        "Quick-dry techniques"
+      ],
+      "duration": "2-4 hours",
+      "popularity": null,
+      "category": "specialty",
+      "frequency": ["one-time", "bi-annually", "annually"],
+      "additionalServices": [
+        "Scotchgard protection (+$50)",
+        "Pet odor treatment (+$75)",
+        "Area rug cleaning (+$25 per rug)"
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "position": "Homeowner",
+      "rating": 5,
+      "text": "SparkleClean Pro transformed my home! Their attention to detail is incredible, and the team is always professional and friendly. I've been using their services for over a year now and couldn't be happier. They consistently exceed my expectations.",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b5b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
+      "date": "2024-12-15",
+      "serviceUsed": "Residential Cleaning",
+      "location": "Downtown District",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "name": "Michael Chen",
+      "position": "Office Manager",
+      "rating": 5,
+      "text": "Our office has never looked better! The commercial cleaning service is top-notch. They work around our schedule and maintain the highest standards of cleanliness. Our employees and clients always comment on how clean and professional our space looks.",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
+      "date": "2024-12-10",
+      "serviceUsed": "Commercial Cleaning",
+      "location": "Oak Park",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "name": "Emily Rodriguez",
+      "position": "Property Manager",
+      "rating": 5,
+      "text": "I manage multiple properties and SparkleClean Pro is my go-to cleaning service. They're reliable, thorough, and their pricing is very competitive. The move-out cleaning service is exceptional - properties are always rent-ready. Highly recommended!",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
+      "date": "2024-12-05",
+      "serviceUsed": "Move-in/Move-out",
+      "location": "Pine Valley",
+      "verified": true
+    },
+    {
+      "id": 4,
+      "name": "David Wilson",
+      "position": "Restaurant Owner",
+      "rating": 5,
+      "text": "Running a restaurant requires the highest cleaning standards. SparkleClean Pro delivers exceptional service every time. They understand the unique needs of our business and always use food-safe cleaning products. Professional and dependable.",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
+      "date": "2024-11-28",
+      "serviceUsed": "Commercial Cleaning",
+      "location": "Riverside Heights",
+      "verified": true
+    },
+    {
+      "id": 5,
+      "name": "Lisa Thompson",
+      "position": "Busy Mom of Three",
+      "rating": 5,
+      "text": "As a working mother of three, SparkleClean Pro is a lifesaver! They give me back my weekends and my house always looks amazing. The team is trustworthy, efficient, and great with kids. The peace of mind is absolutely priceless.",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
+      "date": "2024-11-20",
+      "serviceUsed": "Residential Cleaning",
+      "location": "Sunset Hills",
+      "verified": true
+    },
+    {
+      "id": 6,
+      "name": "Robert Garcia",
+      "position": "Real Estate Agent",
+      "rating": 5,
+      "text": "I work with SparkleClean Pro for all my property showings and move-in cleanings. They're incredibly professional and always deliver results that wow my clients. Quick response time and competitive pricing make them my #1 choice.",
+      "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
+      "date": "2024-11-15",
+      "serviceUsed": "Deep Cleaning",
+      "location": "Garden View",
+      "verified": true
+    },
+    {
+      "id": 7,
+      "name": "Amanda Foster",
+      "position": "Small Business Owner",
+      "rating": 5,
+      "text": "After our office renovation, SparkleClean Pro's post-construction cleanup was incredible. They removed all the dust and debris, making our space look brand new. Attention to detail and professional equipment made all the difference.",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b5b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
+      "date": "2024-11-10",
+      "serviceUsed": "Post-Construction Cleanup",
+      "location": "Maple Grove",
+      "verified": true
+    },
+    {
+      "id": 8,
+      "name": "Thomas Baker",
+      "position": "Apartment Complex Manager",
+      "rating": 5,
+      "text": "We use SparkleClean Pro for all our unit turnovers. Consistent quality, fair pricing, and always on schedule. They help us maintain high occupancy rates by ensuring every unit is pristine for new tenants. Excellent service!",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
+      "date": "2024-11-05",
+      "serviceUsed": "Move-in/Move-out",
+      "location": "Cedar Creek",
+      "verified": true
+    }
+  ],
+  "stats": [
+    {
+      "id": 1,
+      "number": "5000+",
+      "label": "Happy Customers",
+      "icon": "fas fa-users",
+      "description": "Satisfied clients who trust us with their cleaning needs"
+    },
+    {
+      "id": 2,
+      "number": "10+",
+      "label": "Years Experience",
+      "icon": "fas fa-calendar-alt",
+      "description": "Decade of professional cleaning expertise"
+    },
+    {
+      "id": 3,
+      "number": "15000+",
+      "label": "Homes Cleaned",
+      "icon": "fas fa-home",
+      "description": "Properties transformed with our cleaning services"
+    },
+    {
+      "id": 4,
+      "number": "99%",
+      "label": "Satisfaction Rate",
+      "icon": "fas fa-star",
+      "description": "Customer satisfaction guaranteed"
+    }
+  ],
+  "teamMembers": [
+    {
+      "id": 1,
+      "name": "Maria Santos",
+      "position": "Lead Cleaner & Team Supervisor",
+      "experience": "8 years",
+      "specialties": ["Residential Cleaning", "Deep Cleaning", "Quality Control"],
+      "bio": "Maria brings 8 years of meticulous cleaning expertise to every job. She specializes in residential deep cleaning and leads our quality control efforts.",
+      "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+      "certifications": ["Green Cleaning Certified", "OSHA Safety Training"],
+      "languages": ["English", "Spanish"]
+    },
+    {
+      "id": 2,
+      "name": "James Miller",
+      "position": "Commercial Cleaning Specialist",
+      "experience": "6 years",
+      "specialties": ["Office Cleaning", "Post-Construction", "Floor Care"],
+      "bio": "James specializes in commercial cleaning and post-construction cleanup. His attention to detail ensures professional results every time.",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+      "certifications": ["Commercial Cleaning Certified", "Floor Care Specialist"],
+      "languages": ["English"]
+    },
+    {
+      "id": 3,
+      "name": "Anna Kowalski",
+      "position": "Quality Inspector & Customer Service",
+      "experience": "5 years",
+      "specialties": ["Quality Control", "Customer Service", "Training"],
+      "bio": "Anna ensures every cleaning meets our high standards and provides exceptional customer service throughout the process.",
+      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b5b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+      "certifications": ["Customer Service Excellence", "Quality Management"],
+      "languages": ["English", "Polish"]
+    }
+  ],
+  "pricingPlans": [
+    {
+      "id": 1,
+      "name": "Basic Clean",
+      "price": 80,
+      "frequency": "One-time",
+      "description": "Essential cleaning for maintenance and upkeep",
+      "features": [
+        "General cleaning of all rooms",
+        "Vacuum carpets and sweep floors",
+        "Bathroom cleaning and sanitization",
+        "Kitchen cleanup and counters",
+        "Trash removal and bin sanitization"
+      ],
+      "recommended": false,
+      "duration": "2-3 hours",
+      "idealFor": "Regular maintenance cleaning"
+    },
+    {
+      "id": 2,
+      "name": "Standard Clean",
+      "price": 120,
+      "frequency": "Bi-weekly",
+      "description": "Comprehensive cleaning with extra attention to detail",
+      "features": [
+        "Everything in Basic Clean",
+        "Detailed dusting of all surfaces",
+        "Appliance exterior cleaning",
+        "Baseboards and window sills",
+        "Interior window cleaning",
+        "Light fixture dusting"
+      ],
+      "recommended": true,
+      "duration": "3-4 hours",
+      "idealFor": "Most popular choice for busy families"
+    },
+    {
+      "id": 3,
+      "name": "Premium Clean",
+      "price": 180,
+      "frequency": "Weekly",
+      "description": "Luxury cleaning service with premium attention",
+      "features": [
+        "Everything in Standard Clean",
+        "Inside appliances (oven, refrigerator)",
+        "Cabinet fronts and interiors",
+        "Ceiling fan cleaning",
+        "Organizing service included",
+        "Premium eco-friendly products"
+      ],
+      "recommended": false,
+      "duration": "4-5 hours",
+      "idealFor": "Luxury homes and busy professionals"
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "question": "How do I book a cleaning service?",
+      "answer": "You can book our service by filling out the contact form on our website, calling us directly at (555) 123-4567, or using our online booking system. We'll get back to you within 24 hours to confirm your appointment and discuss your specific needs.",
+      "category": "booking"
+    },
+    {
+      "id": 2,
+      "question": "Are your cleaning products safe for children and pets?",
+      "answer": "Absolutely! We use eco-friendly, non-toxic cleaning products that are completely safe for children, pets, and the environment. All our products are EPA-approved, biodegradable, and free from harsh chemicals. We can also accommodate specific allergies or sensitivities.",
+      "category": "safety"
+    },
+    {
+      "id": 3,
+      "question": "Do I need to be home during the cleaning?",
+      "answer": "No, you don't need to be present during the cleaning. Many of our clients provide us with a key, garage code, or lockbox access. All our staff are bonded, insured, and background-checked for your complete peace of mind and security.",
+      "category": "logistics"
+    },
+    {
+      "id": 4,
+      "question": "What if I'm not satisfied with the cleaning?",
+      "answer": "We offer a 100% satisfaction guarantee! If you're not completely happy with our service, contact us within 24 hours and we'll return to re-clean any areas of concern at no additional cost. Your satisfaction is our top priority.",
+      "category": "guarantee"
+    },
+    {
+      "id": 5,
+      "question": "How much does a cleaning service cost?",
+      "answer": "Our pricing depends on the size of your space, type of cleaning needed, and frequency of service. Basic residential cleaning starts at $80, while deep cleaning ranges from $200-400. We provide free estimates and customize pricing based on your specific needs.",
+      "category": "pricing"
+    },
+    {
+      "id": 6,
+      "question": "What should I do to prepare for the cleaning?",
+      "answer": "We recommend picking up personal items, toys, and clutter to allow our team to focus on cleaning. Secure any valuables, and let us know about any specific areas of concern or items that require special attention.",
+      "category": "preparation"
+    },
+    {
+      "id": 7,
+      "question": "Do you bring your own cleaning supplies and equipment?",
+      "answer": "Yes! We bring all necessary cleaning supplies, equipment, and tools. Our professional-grade equipment and eco-friendly products ensure the best results. If you prefer us to use your specific products, just let us know in advance.",
+      "category": "supplies"
+    },
+    {
+      "id": 8,
+      "question": "Are you licensed and insured?",
+      "answer": "Yes, SparkleClean Pro is fully licensed, bonded, and insured. We carry comprehensive liability insurance and workers' compensation coverage. All our team members undergo background checks and professional training for your security and peace of mind.",
+      "category": "credentials"
+    }
+  ],
+  "serviceAreas": [
+    {
+      "name": "Downtown District",
+      "zipCodes": ["12301", "12302", "12305"],
+      "averageResponseTime": "2-4 hours",
+      "servicesAvailable": "all"
+    },
+    {
+      "name": "Riverside Heights",
+      "zipCodes": ["12310", "12315", "12320"],
+      "averageResponseTime": "3-5 hours",
+      "servicesAvailable": "all"
+    },
+    {
+      "name": "Oak Park",
+      "zipCodes": ["12325", "12330", "12335"],
+      "averageResponseTime": "2-4 hours",
+      "servicesAvailable": "all"
+    },
+    {
+      "name": "Pine Valley",
+      "zipCodes": ["12340", "12345", "12350"],
+      "averageResponseTime": "4-6 hours",
+      "servicesAvailable": "all"
+    },
+    {
+      "name": "Sunset Hills",
+      "zipCodes": ["12355", "12360", "12365"],
+      "averageResponseTime": "3-5 hours",
+      "servicesAvailable": "all"
+    },
+    {
+      "name": "Garden View",
+      "zipCodes": ["12370", "12375", "12380"],
+      "averageResponseTime": "2-4 hours",
+      "servicesAvailable": "all"
+    },
+    {
+      "name": "Maple Grove",
+      "zipCodes": ["12385", "12390", "12395"],
+      "averageResponseTime": "3-5 hours",
+      "servicesAvailable": "all"
+    },
+    {
+      "name": "Cedar Creek",
+      "zipCodes": ["12400", "12405", "12410"],
+      "averageResponseTime": "4-6 hours",
+      "servicesAvailable": "all"
+    },
+    {
+      "name": "Willow Springs",
+      "zipCodes": ["12415", "12420", "12425"],
+      "averageResponseTime": "5-7 hours",
+      "servicesAvailable": "residential, commercial"
+    },
+    {
+      "name": "Birch Lane",
+      "zipCodes": ["12430", "12435", "12440"],
+      "averageResponseTime": "4-6 hours",
+      "servicesAvailable": "residential, deep-cleaning"
+    }
+  ],
+  "companyInfo": {
+    "name": "SparkleClean Pro",
+    "founded": "2014",
+    "employees": "25+",
+    "headquarters": "123 Clean Street, Clean City, CC 12345",
+    "phone": "+1 (555) 123-4567",
+    "email": "info@sparklecleanpro.com",
+    "website": "https://sparklecleanpro.com",
+    "socialMedia": {
+      "facebook": "https://facebook.com/sparklecleanpro",
+      "twitter": "https://twitter.com/sparklecleanpro",
+      "instagram": "https://instagram.com/sparklecleanpro",
+      "linkedin": "https://linkedin.com/company/sparklecleanpro"
+    },
+    "businessHours": {
+      "monday": "8:00 AM - 6:00 PM",
+      "tuesday": "8:00 AM - 6:00 PM",
+      "wednesday": "8:00 AM - 6:00 PM",
+      "thursday": "8:00 AM - 6:00 PM",
+      "friday": "8:00 AM - 6:00 PM",
+      "saturday": "9:00 AM - 4:00 PM",
+      "sunday": "Closed"
+    },
+    "certifications": [
+      "EPA Green Certified",
+      "Better Business Bureau A+ Rating",
+      "Cleaning Industry Management Standard (CIMS)",
+      "OSHA Safety Compliance"
+    ],
+    "mission": "To provide exceptional, eco-friendly cleaning services that give our clients more time to focus on what matters most to them.",
+    "vision": "To be the most trusted and reliable cleaning service in our community, known for our quality, integrity, and customer satisfaction."
+  }
+}
