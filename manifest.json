@@ -4,8 +4,8 @@
   "description": "Professional cleaning services for homes and offices. Reliable, affordable, and eco-friendly cleaning solutions.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#667eea",
-  "theme_color": "#667eea",
+  "background_color": "#5e4db2",
+  "theme_color": "#5e4db2",
   "orientation": "portrait-primary",
   "icons": [
     {

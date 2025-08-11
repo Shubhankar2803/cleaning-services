@@ -72,48 +72,34 @@
     <div id="header-container"></div>
 
     <!-- Hero Section -->
-    <section id="home" class="hero hero-modern min-vh-100 d-flex align-items-center position-relative overflow-hidden" style="background: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80') center center/cover no-repeat;">
-        <div class="hero-overlay-pattern"></div>
-        <div class="container hero-content position-relative" style="z-index:2;">
+    <section id="home" class="hero hero-modern min-vh-100 d-flex align-items-center position-relative">
+        <div class="container hero-content position-relative">
             <div class="row align-items-center justify-content-center g-5">
-                <div class="col-lg-7 col-md-9 mx-auto text-center">
-                    <span class="hero-badge mb-4" data-anim="1"><i class="fas fa-shield-alt"></i> Licensed & Insured</span>
-                    <h1 class="hero-title mb-4" data-anim="2">Transform Your Space with <span class="highlight">SparkleClean Pro</span></h1>
-                    <p class="lead text-white-75 mb-4" data-anim="3">Experience premium cleaning services that exceed expectations. Eco-friendly products, certified pros, spotless results.</p>
-                    <ul class="hero-list d-inline-block text-start mx-auto" data-anim="4">
-                        <li>Residential & Commercial</li>
-                        <li>Deep Cleaning Experts</li>
-                        <li>Eco-Friendly Products</li>
-                        <li>Flexible Scheduling</li>
-                        <li>Licensed & Insured</li>
-                        <li>100% Satisfaction</li>
-                    </ul>
-                    <div class="d-flex flex-wrap gap-3 justify-content-center mb-3 mt-4" data-anim="5">
-                        <a href="contact.html" class="btn btn-gradient-primary btn-rounded-pill px-4 py-3"><i class="fas fa-calendar-check me-2"></i>Get Free Quote</a>
-                        <a href="#services-preview" class="btn btn-outline-white btn-rounded-pill px-4 py-3"><i class="fas fa-arrow-down me-2"></i>Explore</a>
-                        <a href="services.html" class="btn btn-outline-white btn-rounded-pill px-4 py-3"><i class="fas fa-list me-2"></i>Our Services</a>
+                <div class="col-lg-8 col-md-10 mx-auto text-center">
+                    <span class="hero-badge mb-4" data-anim="1"><i class="fas fa-shield-alt me-2"></i>Licensed & Insured</span>
+                    <h1 class="hero-title mb-4" data-anim="2">Professional Cleaning Services for <span class="highlight">Modern Homes</span></h1>
+                    <p class="lead mb-5" data-anim="3" style="color: var(--clr-muted); font-size: 1.25rem;">Experience premium cleaning services that exceed expectations. Eco-friendly products, certified professionals, spotless results.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center mb-5" data-anim="4">
+                        <a href="contact.html" class="btn btn-gradient-primary px-4 py-3">Get Free Quote</a>
+                        <a href="services.html" class="btn btn-outline-primary px-4 py-3">Our Services</a>
                     </div>
-                    <div class="hero-metrics justify-content-center" data-anim="6">
+                    <div class="hero-metrics justify-content-center" data-anim="5">
                         <div class="metric">
                             <div class="value counter" data-target="12" data-suffix="+">0</div>
-                            <small>Years</small>
+                            <small>Years Experience</small>
                         </div>
                         <div class="metric">
                             <div class="value counter" data-target="5000" data-format="locale" data-suffix="+">0</div>
-                            <small>Clients</small>
+                            <small>Happy Clients</small>
                         </div>
                         <div class="metric">
                             <div class="value counter" data-target="100" data-suffix="%">0</div>
-                            <small>Satisfaction</small>
+                            <small>Satisfaction Rate</small>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="#services-preview" class="scroll-indicator" aria-label="Scroll to services"></a>
-        <div class="floating-shape small" style="top:15%; left:70%"></div>
-        <div class="floating-shape medium" style="top:60%; left:5%"></div>
-        <div class="floating-shape small" style="bottom:12%; right:12%" data-anim="8"></div>
     </section>
 
     <section id="services-preview" class="py-5 bg-light">
@@ -136,7 +122,7 @@
             <!-- Services Grid -->
             <div class="row g-4 mb-5" id="services-container">
                 <div class="col-lg-4 col-md-6">
-                    <div class="card border-0 card-gradient-1 text-white h-100 card-hover">
+                    <div class="card border-0 service-card--gradient-1 text-white h-100 card-hover">
                         <div class="card-body p-4 text-center">
                             <div class="mb-3">
                                 <i class="fas fa-home fa-3x"></i>
@@ -147,7 +133,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="card border-0 card-gradient-2 text-white h-100 card-hover">
+                    <div class="card border-0 service-card--gradient-2 text-white h-100 card-hover">
                         <div class="card-body p-4 text-center">
                             <div class="mb-3">
                                 <i class="fas fa-building fa-3x"></i>
@@ -158,7 +144,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="card border-0 card-gradient-3 text-white h-100 card-hover">
+                    <div class="card border-0 service-card--gradient-3 text-white h-100 card-hover">
                         <div class="card-body p-4 text-center">
                             <div class="mb-3">
                                 <i class="fas fa-broom fa-3x"></i>
@@ -186,12 +172,11 @@
         </div>
     </section>
 
-    <!-- Replaced testimonials slider with static flex row -->
     <section id="testimonials" class="section bg-gradient-primary text-white position-relative overflow-hidden">
       <div class="container position-relative">
         <div class="section-head text-center mb-5">
           <span class="hero-badge mb-3" data-anim="1"><i class="fas fa-heart"></i> Client Love</span>
-          <h2 class="hero-title mb-3" data-anim="2">Real Stories from <span class="highlight">Happy Customers</span></h2>
+          <h2 class="hero-title mb-3" data-anim="2">Real Stories from <span class="highlight text-white">Happy Customers</span></h2>
           <p class="lead text-white-75 mb-0" data-anim="3">What clients say after experiencing the SparkleClean Pro difference.</p>
         </div>
         <div class="row g-4" id="testimonial-static-row" data-anim="4">
@@ -241,25 +226,17 @@
       </div>
     </section>
 
-    <section id="contact" class="py-5 position-relative overflow-hidden" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-        <!-- Floating decorative elements -->
-        <div class="position-absolute" style="top: 10%; right: 5%; width: 120px; height: 120px; background: rgba(255,255,255,0.1); border-radius: 50%; animation: float 8s ease-in-out infinite;"></div>
-        <div class="position-absolute" style="bottom: 10%; left: 5%; width: 80px; height: 80px; background: rgba(255,255,255,0.15); border-radius: 50%; animation: float 6s ease-in-out infinite reverse;"></div>
-        
-        <div class="container position-relative" style="z-index: 2;">
+    <section id="contact" class="py-5" style="background: var(--clr-light-alt);">
+        <div class="container">
             <div class="row mb-5">
                 <div class="col-lg-8 mx-auto text-center">
-                    <div class="section-header p-4 rounded-4" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.2);">
-                        <h2 class="display-5 fw-bold mb-3 text-white">Get Your Free Quote</h2>
-                        <p class="lead text-white-75">Ready to experience the SparkleClean Pro difference? Contact us today!</p>
-                    </div>
+                    <h2 class="display-6 fw-bold mb-3">Get Your Free Quote</h2>
+                    <p class="lead text-muted">Ready to experience professional cleaning? Contact us today for a free estimate.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <div class="contact-form-card p-5 rounded-4 position-relative overflow-hidden" style="background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.3);">
-                        <!-- Decorative gradient overlay -->
-                        <div class="position-absolute top-0 start-0 w-100" style="height: 5px; background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%); border-radius: 20px 20px 0 0;"></div>
+                    <div class="bg-white p-5 rounded-3 shadow-sm">
                         
                         <form id="contact-form" class="needs-validation" novalidate>
                             <div class="row mb-3">
@@ -302,7 +279,7 @@
                                 <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your cleaning needs..." style="border-radius: 10px; border: 2px solid #e9ecef; padding: 12px;"></textarea>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-lg px-5 py-3 fw-bold position-relative overflow-hidden" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); border: none; border-radius: 50px; color: white; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 30px rgba(67, 233, 123, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(67, 233, 123, 0.2)'">
+                                <button type="submit" class="btn btn-gradient-primary btn-lg px-5">
                                     <i class="fas fa-paper-plane me-2"></i>Send Message
                                 </button>
                             </div>
@@ -311,17 +288,6 @@
                 </div>
             </div>
         </div>
-        
-        <style>
-            @keyframes float {
-                0%, 100% { 
-                    transform: translateY(0px) rotate(0deg); 
-                }
-                50% { 
-                    transform: translateY(-20px) rotate(180deg); 
-                }
-            }
-        </style>
     </section>
 
     <div id="footer-container"></div>
