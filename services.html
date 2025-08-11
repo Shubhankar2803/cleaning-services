@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Primary Meta Tags -->
+        <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
     
     <!-- SEO Meta Tags -->
     <title>Our Services - Professional Cleaning Solutions | SparkleClean Pro</title>
@@ -39,131 +51,184 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Professional Cleaning Services",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "SparkleClean Pro"
-        },
-        "serviceType": ["Residential Cleaning", "Commercial Cleaning", "Deep Cleaning", "Move-in/Move-out Cleaning", "Post-Construction Cleanup", "Carpet Cleaning"],
-        "areaServed": "Clean City and surrounding areas"
-    }
-    </script>
+    <!-- Stylesheet Link -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body data-page="services">
     <!-- Header Container -->
     <div id="header-container"></div>
 
-    <!-- Page Header -->
-    <section class="page-header py-5 bg-primary text-white">
-        <div class="container">
-            <div class="row">
+    <!-- Enhanced Page Header -->
+    <section class="hero hero--subpage position-relative overflow-hidden" style="background: linear-gradient(135deg, #93a4f0 0%, #ae78e4 100%) !important; min-height: 400px !important; display: flex !important; align-items: center !important; justify-content: center !important; position: relative !important; overflow: hidden !important; padding: 80px 0 !important; opacity: 0; animation: fadeIn 1s ease-out forwards;">
+        <div class="hero-overlay-pattern"></div>
+        <div class="container hero-content text-center">
+            <span class="hero-badge mb-4"><i class="fas fa-broom"></i> Professional Services</span>
+            <h1 class="hero-title mb-3">Our Cleaning <span class="highlight">Services</span></h1>
+            <p class="lead text-white-75 mx-auto" style="max-width:640px">Professional cleaning solutions tailored to your needs with eco-friendly products and guaranteed satisfaction.</p>
+            <div class="hero-breadcrumb mt-3"><a href="index.html"><i class="fas fa-home me-1"></i> Home</a><span>›</span><span class="fw-semibold">Services</span></div>
+        </div>
+        <div class="floating-shape small" style="top:18%; left:10%"></div>
+        <div class="floating-shape medium" style="top:58%; right:18%"></div>
+    </section>
+    
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUpFade {
+            from { 
+                opacity: 0; 
+                transform: translateY(30px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% { 
+                transform: translateY(0px) rotate(0deg); 
+            }
+            50% { 
+                transform: translateY(-20px) rotate(180deg); 
+            }
+        }
+    </style>
+
+    <!-- Services Section -->
+    <section class="section position-relative overflow-hidden bg-gradient-primary text-white">
+        <div class="position-absolute top-0 end-0 translate-middle-y opacity-25" style="width:220px;height:220px;background:radial-gradient(circle,rgba(255,255,255,.4),transparent 70%);filter:blur(4px);"></div>
+        <div class="container position-relative">
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto text-center">
+                    <div class="p-4 p-md-5 rounded-4 glassmorphism border-0">
+                        <h2 class="display-6 fw-bold mb-3">Complete Cleaning Solutions</h2>
+                        <p class="lead text-white-75 mb-0">From routine maintenance to specialized deep cleaning, we provide comprehensive services to keep your space spotless.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="service-search mb-3">
+                        <i class="fas fa-search icon"></i>
+                        <input id="serviceSearch" type="text" class="form-control form-control-lg" placeholder="Search a service (e.g. deep, carpet, office)..." aria-label="Search services" />
+                    </div>
+                    <div class="service-filters" id="serviceFilters" role="tablist" aria-label="Filter services">
+                        <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                        <button class="filter-btn" data-filter="home">Home</button>
+                        <button class="filter-btn" data-filter="business">Business</button>
+                        <button class="filter-btn" data-filter="deep">Deep</button>
+                        <button class="filter-btn" data-filter="move">Move</button>
+                        <button class="filter-btn" data-filter="special">Specialty</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row services-grid" id="all-services-container" aria-live="polite"></div>
+        </div>
+    </section>
+    
+    <section class="section section-glass text-dark">
+        <div class="container position-relative">
+            <div class="row mb-5">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h1 class="display-4 fw-bold mb-3">Our Services</h1>
-                    <p class="lead">Professional cleaning solutions tailored to your specific needs</p>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
-                            <li class="breadcrumb-item active text-white">Services</li>
-                        </ol>
-                    </nav>
+                    <h2 class="fw-bold mb-3 text-gradient-primary">Why Choose Our Services?</h2>
+                    <p class="lead text-muted">We go above and beyond to deliver exceptional cleaning results</p>
+                </div>
+            </div>
+            <div class="feature-strip">
+                <div class="feature-box">
+                    <i class="fas fa-shield-alt"></i>
+                    <h6 class="fw-bold mb-1">Fully Insured</h6>
+                    <p class="small text-muted mb-0">Bonded & liability coverage for peace of mind.</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-leaf"></i>
+                    <h6 class="fw-bold mb-1">Eco-Friendly</h6>
+                    <p class="small text-muted mb-0">Non-toxic products safe for family & pets.</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-clock"></i>
+                    <h6 class="fw-bold mb-1">Flexible Scheduling</h6>
+                    <p class="small text-muted mb-0">Custom cleaning plans around your time.</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-star"></i>
+                    <h6 class="fw-bold mb-1">Satisfaction Guarantee</h6>
+                    <p class="small text-muted mb-0">We return if it's not perfect – free.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="py-5">
+    <!-- Process Steps -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-7">
+                    <h2 class="fw-bold mb-3">How It Works</h2>
+                    <p class="lead mb-0">Simple, transparent process from booking to sparkling results.</p>
+                </div>
+            </div>
+            <div class="process-steps mb-4">
+                <div class="process-step">
+                    <h5>Request Quote</h5>
+                    <p class="small text-muted mb-0">Tell us about your space & preferences.</p>
+                </div>
+                <div class="process-step">
+                    <h5>Customize Plan</h5>
+                    <p class="small text-muted mb-0">Choose frequency & any add‑on services.</p>
+                </div>
+                <div class="process-step">
+                    <h5>We Clean</h5>
+                    <p class="small text-muted mb-0">Professional, punctual, fully equipped team.</p>
+                </div>
+                <div class="process-step">
+                    <h5>Enjoy & Maintain</h5>
+                    <p class="small text-muted mb-0">Ongoing quality checks & support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="display-6 fw-bold mb-3">Complete Cleaning Solutions</h2>
-                    <p class="lead text-muted">From routine maintenance to specialized deep cleaning, we provide comprehensive services to keep your space spotless.</p>
+                    <h2 class="fw-bold mb-3">Common Questions</h2>
+                    <p class="lead text-muted mb-0">Everything you need to know about our cleaning services.</p>
                 </div>
             </div>
-            <div class="row" id="all-services-container">
-                <!-- All services will be loaded dynamically -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Service Features Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center mb-5">
-                    <h2 class="display-6 fw-bold mb-3">Why Choose Our Services?</h2>
-                    <p class="lead">We go above and beyond to deliver exceptional cleaning results</p>
+            <div class="accordion" id="servicesFAQ">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="q1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="true" aria-controls="a1">What is included in a standard cleaning?</button></h2>
+                    <div id="a1" class="accordion-collapse collapse show" aria-labelledby="q1" data-bs-parent="#servicesFAQ"><div class="accordion-body small">Standard cleaning covers all general living areas, kitchen wipe-down, exterior appliance surfaces, bathroom sanitization, dusting, vacuuming, and mopping.</div></div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="text-center">
-                        <div class="feature-icon-large mx-auto mb-3">
-                            <i class="fas fa-shield-check text-primary"></i>
-                        </div>
-                        <h5>Fully Insured</h5>
-                        <p class="text-muted">Complete liability coverage and bonded staff for your peace of mind.</p>
-                    </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="q2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="a2">Do I need to provide supplies?</button></h2>
+                    <div id="a2" class="accordion-collapse collapse" aria-labelledby="q2" data-bs-parent="#servicesFAQ"><div class="accordion-body small">No. We bring professional, eco-friendly products and equipment. Let us know if you prefer we use your own items.</div></div>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="text-center">
-                        <div class="feature-icon-large mx-auto mb-3">
-                            <i class="fas fa-leaf text-success"></i>
-                        </div>
-                        <h5>Eco-Friendly</h5>
-                        <p class="text-muted">Safe, non-toxic cleaning products that protect your family and pets.</p>
-                    </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="q3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="a3">Are your cleaners vetted?</button></h2>
+                    <div id="a3" class="accordion-collapse collapse" aria-labelledby="q3" data-bs-parent="#servicesFAQ"><div class="accordion-body small">All team members pass background checks, are insured, trained, and follow strict quality standards.</div></div>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="text-center">
-                        <div class="feature-icon-large mx-auto mb-3">
-                            <i class="fas fa-clock text-warning"></i>
-                        </div>
-                        <h5>Flexible Scheduling</h5>
-                        <p class="text-muted">Work around your schedule with convenient booking options.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="text-center">
-                        <div class="feature-icon-large mx-auto mb-3">
-                            <i class="fas fa-star text-info"></i>
-                        </div>
-                        <h5>Satisfaction Guarantee</h5>
-                        <p class="text-muted">100% satisfaction guarantee or we'll return to make it right.</p>
-                    </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="q4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="a4">What if I'm not satisfied?</button></h2>
+                    <div id="a4" class="accordion-collapse collapse" aria-labelledby="q4" data-bs-parent="#servicesFAQ"><div class="accordion-body small">Contact us within 24 hours and we will return to re-clean affected areas at no charge.</div></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="py-5 bg-primary text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="display-6 fw-bold mb-3">Ready to Get Started?</h2>
-                    <p class="lead mb-4">Contact us today for a free quote and experience the SparkleClean Pro difference!</p>
-                    <div class="d-flex flex-wrap gap-3 justify-content-center">
-                        <a href="contact.html" class="btn btn-light btn-lg">
-                            <i class="fas fa-calendar me-2"></i>Get Free Quote
-                        </a>
-                        <a href="tel:+15551234567" class="btn btn-outline-light btn-lg">
-                            <i class="fas fa-phone me-2"></i>Call Now
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+ 
 
     <!-- Footer Container -->
     <div id="footer-container"></div>
@@ -181,19 +246,98 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             loadAllServices();
+            initFilters();
+            initSearch();
+            initScrollAnimations();
         });
 
-        function loadAllServices() {
-            const container = document.getElementById('all-services-container');
-            if (!container) return;
-            
-            container.innerHTML = '';
-            
-            mockData.services.forEach((service, index) => {
-                const serviceCard = ComponentLibrary.createServiceCard(service, index);
-                container.innerHTML += serviceCard;
+        const servicesData = [
+            { key:'residential-cleaning', title: 'Residential Cleaning', description: 'Regular house cleaning services for homes and apartments. Keep your living space spotless with our reliable weekly, bi-weekly, or monthly cleaning services.', icon: 'fas fa-home', price: 'Starting at $80', category: 'home', features: ['Kitchen & bathroom deep clean','Dusting all surfaces','Vacuum & mop floors','Trash removal'] },
+            { key:'commercial-cleaning', title: 'Commercial Cleaning', description: 'Professional office and commercial space cleaning. Maintain a clean, productive work environment for your employees and customers.', icon: 'fas fa-building', price: 'Starting at $120', category: 'business', features: ['Office sanitization','Conference room cleaning','Restroom maintenance','Floor care & carpet cleaning'] },
+            { key:'deep-cleaning', title: 'Deep Cleaning', description: 'Comprehensive top-to-bottom cleaning service. Perfect for move-ins, special occasions, or when you need that extra level of cleanliness.', icon: 'fas fa-sparkles', price: 'Starting at $200', category: 'deep', features: ['Inside appliance cleaning','Baseboards & window sills','Light fixture cleaning','Cabinet interior cleaning'] },
+            { key:'move-cleaning', title: 'Move-in/Move-out', description: 'Complete cleaning for property transitions. Ensure your new home is pristine or leave your old one in perfect condition.', icon: 'fas fa-boxes', price: 'Starting at $250', category: 'move', features: ['All rooms deep cleaned','Appliance cleaning','Cabinet & closet cleaning','Paint-ready surfaces'] },
+            { key:'post-construction', title: 'Post-Construction', description: 'Specialized cleaning after renovation or construction work. Remove dust, debris, and construction residue safely and thoroughly.', icon: 'fas fa-hard-hat', price: 'Starting at $300', category: 'special', features: ['Dust & debris removal','Window cleaning','Floor protection removal','Final walk-through'] },
+            { key:'carpet-cleaning', title: 'Carpet Cleaning', description: 'Professional carpet and upholstery cleaning services. Restore your carpets and furniture to like-new condition.', icon: 'fas fa-couch', price: 'Starting at $150', category: 'special', features: ['Deep steam cleaning','Stain removal','Odor elimination','Fast drying technology'] }
+        ];
+
+        function initFilters(){
+            const filterWrap = document.getElementById('serviceFilters');
+            if(!filterWrap) return; 
+            filterWrap.addEventListener('click', e => {
+                if(e.target.matches('.filter-btn')) {
+                    filterWrap.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+                    e.target.classList.add('active');
+                    const val = e.target.dataset.filter;
+                    const term = document.getElementById('serviceSearch').value.trim().toLowerCase();
+                    renderServices(val, term);
+                }
             });
         }
+
+        function initSearch(){
+            const input = document.getElementById('serviceSearch');
+            if(!input) return; 
+            input.addEventListener('input', () => {
+                const activeFilter = document.querySelector('.filter-btn.active')?.dataset.filter || 'all';
+                renderServices(activeFilter, input.value.trim().toLowerCase());
+            });
+        }
+
+        function loadAllServices(){
+            renderServices('all','');
+        }
+
+        function renderServices(category, term){
+            const container = document.getElementById('all-services-container');
+            if(!container) return; 
+            container.innerHTML='';
+            const filtered = servicesData.filter(s => (category==='all' || s.category===category) && (!term || s.title.toLowerCase().includes(term) || s.description.toLowerCase().includes(term)));
+            if(filtered.length===0){
+                container.innerHTML = '<div class="col-12 text-center text-white-75 py-4">No services match your search.</div>';
+                return;
+            }
+            filtered.forEach((service,index)=>{
+                const col = document.createElement('div');
+                col.className='col-md-6 col-lg-4 mb-4';
+                col.innerHTML = createServiceCard(service,index);
+                container.appendChild(col);
+            });
+            setTimeout(()=>initScrollAnimations(), 40);
+        }
+
+        function createServiceCard(service,index){
+            const variant = (index % 6) + 1;
+            const featuresHTML = service.features.slice(0,3).map(f=>`<li><i class=\"fas fa-check-circle\"></i><span>${f}</span></li>`).join('');
+            return `<article class=\"service-card service-card--gradient-${variant} animate-on-scroll h-100\" data-category=\"${service.category}\" aria-labelledby=\"${service.key}-title\">
+
+                <div class=\"decor-corner\"></div><div class=\"decor-ring\"></div>
+                <header class=\"mb-3 d-flex justify-content-between align-items-start flex-wrap gap-2\">
+                    <div class=\"service-icon\"><i class=\"${service.icon}\" aria-hidden=\"true\"></i></div>
+                    <span class=\"price-badge\">${service.price}</span>
+                </header>
+                <h3 id=\"${service.key}-title\" class=\"service-title\">${service.title}</h3>
+                <p class=\"mb-3 small text-white-75\" style=\"min-height:60px;\">${service.description}</p>
+                <ul class=\"service-features mb-4\">${featuresHTML}</ul>
+                <div class=\"d-flex gap-2 flex-wrap mb-4 small opacity-75\">
+                    <span><i class=\"fas fa-clock me-1\"></i>3-6 hrs</span>
+                    <span><i class=\"fas fa-shield-alt me-1\"></i>Insured</span>
+                    <span><i class=\"fas fa-leaf me-1\"></i>Eco</span>
+                </div>
+                <footer class=\"mt-auto\">
+                    <a href=\"contact.html?service=${encodeURIComponent(service.title)}\" class=\"btn book-btn w-100 py-2\" aria-label=\"Book ${service.title}\">Book This Service <i class=\"fas fa-arrow-right ms-1\" aria-hidden=\"true\"></i></a>
+                </footer>
+            </article>`;
+        }
+
+        function initScrollAnimations(){
+            const observer = new IntersectionObserver(entries=>{
+                entries.forEach(entry=>{ if(entry.isIntersecting){ entry.target.classList.add('animated'); } });
+            },{ threshold:.1, rootMargin:'0px 0px -50px 0px' });
+            document.querySelectorAll('.animate-on-scroll').forEach(el=>observer.observe(el));
+            document.querySelectorAll('.service-card.animate-on-scroll').forEach((card,i)=>{ card.style.animationDelay = `${i*0.08}s`; });
+        }
     </script>
+
+    <!-- ...existing code (closing styles/scripts/footer)... -->
 </body>
 </html>
